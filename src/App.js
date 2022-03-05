@@ -16,8 +16,12 @@ function App() {
   const [outputGraphData, setOutputGraphData] = useState({});
   
   const handleOpenForm = () => {
-    console.log("Form opened");
-    setFlag(!false);
+    if (allNames.length > 1) {
+      setFlag(!false);
+    }
+    else {
+      alert("Atleast two people must be entered.")
+    }
   };
   return (
     <div style={{ margin: "auto" }}>
