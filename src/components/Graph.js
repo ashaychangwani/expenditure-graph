@@ -4,7 +4,7 @@ import { Graph as ReactGraph} from "react-d3-graph";
 const Graph = ({ graphData, graphHeader, graphConfig }) => {
 
   return (
-    <Grid item xs={12} md={6}>
+    <Grid item xs={14} md={7}>
       {Object.keys(graphData).length && Object.keys(graphConfig).length ? (
         <>
           <h4>{graphHeader}</h4>

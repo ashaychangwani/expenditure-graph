@@ -12,7 +12,7 @@ const Names = (props) => {
       props.setAllNames((previous) => [{ name }, ...previous]);
       setName("");
     } else {
-      alert("Name cant be empty");
+      alert("Name can't be empty");
     }
     // setAllNames((previous) => [{ name }, ...previous]);
     // setName("");

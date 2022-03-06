@@ -9,7 +9,7 @@ const NameInput = ({ flag, addParticipant, name, handleChange }) => {
         <div className="p-name-field">
           <TextField
             id="outlined-basic"
-            label="Name"
+            label="Enter username"
             variant="outlined"
             value={name}
             disabled={flag}

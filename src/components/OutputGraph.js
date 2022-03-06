@@ -4,7 +4,7 @@ import {config} from "../utils/graphConfig"
 const OutputGraph = ({ graphData, graphHeader }) => {
 
   return (
-    <Grid item xs={12} md={6}>
+    <Grid item xs={14} md={7}>
       {Object.keys(graphData).length && Object.keys(config).length ? (
         <>
           <h4>{graphHeader}</h4>
