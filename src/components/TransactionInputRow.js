@@ -46,7 +46,7 @@ const TransactionInputRow = (props) => {
             label="Amount"
             type="number"
             value={amount}
-            placeholder="Enter Amount"
+            placeholder="Enter transaction amount"
             onChange={props.handleFinalChange("amount")}
             InputLabelProps={{
               shrink: true,

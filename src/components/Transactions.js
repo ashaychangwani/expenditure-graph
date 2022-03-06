@@ -27,7 +27,7 @@ const Transactions = (props) => {
     ) {
       props.setItems([...props.items, finalValues]);
     } else {
-      alert("Enter all Fields");
+      alert("Please enter all required fields for this transactions");
     }
     setFinalValues({
       ...finalValues,
@@ -75,7 +75,7 @@ const Transactions = (props) => {
             addValues={addValues}
             finalValues={finalValues}
             handleFinalChange={handleFinalChange}
-            tableHeader = "Input Transactions"
+            tableHeader = "Input details of transactions performed"
           />
         )}
       </div>
@@ -86,14 +86,14 @@ const Transactions = (props) => {
             variant="contained"
             color="primary"
             onClick={handleTransactionDataSubmit}
-            text="Build Graph"
+            text="Build graph of all transactions"
           />
 
           <Button
             variant="contained"
             color="secondary"
             onClick={minimiseCash}
-            text="Simplify Settlements"
+            text="Simplify all settlements between users"
           />
         </div>
       ) : null}
