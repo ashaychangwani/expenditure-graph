@@ -23,7 +23,7 @@ function App() {
       setFlag(!false);
     }
     else {
-      alert("Atleast two people must be entered.")
+      alert("Atleast two people must be entered to generate transactions and graphs.")
     }
   };
 
@@ -51,7 +51,7 @@ function App() {
             />
             <Graph
               graphData={inputGraphData}
-              graphHeader="Transactions Graph"
+              graphHeader="Generated Graph of Transactions"
               graphConfig={graphConfig}
             />
           </Grid>
@@ -59,12 +59,12 @@ function App() {
             <Grid container>
               <Grid item xs={12} md={6}>
                 <div className="form">
-                  <TransactionTable isInput={false} items={outputList} tableHeader="Simplified Transactions"/>
+                  <TransactionTable isInput={false} items={outputList} tableHeader="Simplified Transactions of cash"/>
                 </div>
               </Grid>
               <OutputGraph
                 graphData={outputGraphData}
-                graphHeader={"Simplified Graph"}
+                graphHeader={"Simplified Graph of Transactions"}
                 graphConfig={graphConfig}
               />
             </Grid>
