@@ -1,4 +1,4 @@
-# Splitwise, but custom.
+# Splitwise, visualized.
 
 This program doesn't do anything that's never been done before. It's simply my implementation of Splitwise, a popular app to track and simplify cashflow between a group of friends. The aim is to see if a graph where people involved in transactions are the nodes and edges are the transactions between two nodes could be used to simplify the problem. I will start with a naive method and progress to algorithms like SSSP to find an optimal solution if the naive approach is time or computationally expensive.  
 
